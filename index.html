@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Picture collage with Grid Layout</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1 class="text-center pt-4">Picture collage with grid Layout</h1>
+      <h1 class="text-center pt-4">Picture collage with grid Layout</h1>
     </header>
     <main>
-        <section class="py-14">
-            <div class="h-[400px] gap-[5px] mb-[5px]">
-                <img class="w-full h-full" src="./images/A.jpg" alt="">
-            </div>
+      <section class="py-14">
 
+        <div class="lg:h-[400px] lg:gap-[5px] lg:mb-[5px] mb-[5px]">
+          <img class="w-full h-full " src="./images/A.jpg" alt="" />
+        </div>
 
-            <div class="flex h-[400px] gap-[5px] mb-[5px]">
-                <div class="flex-1">
-                    <img class="w-full h-full" src="./images/B.jpg" alt="">
-                </div>
+        <div class="lg:flex lg:h-[400px] lg:gap-[5px]">
+          <div class="flex-1 mb-[5px]">
+            <img class="w-full h-full" src="./images/B.jpg" alt="" />
+          </div>
 
-                <div class="flex-1">
-                    <img class="w-full h-full" src="./images/C.jpg" alt="">
-                </div>
+          <div class="flex-1 mb-[5px]">
+            <img class="w-full h-full" src="./images/C.jpg" alt="" />
+          </div>
 
-                <div class="flex-1">
-                    <img class=" w-full mb-[5px] h-[calc((100%-5px)/2)]" src="./images/D.jpg " alt="">
-                    <img class="w-full h-[calc((100%-5px)/2)]" src="./images/E.jpg " alt="">
-                </div>
-            </div>
+          <div class="flex-1 mb-[5px]">
+            <img class="w-full mb-[5px] h-[calc((100%-5px)/2)]" src="./images/D.jpg " alt="" />
+            <img class="w-full mb-[5px] h-[calc((100%-5px)/2)]" src="./images/E.jpg " alt="" />
+          </div>
+        </div>
 
-            <div class="flex gap-[5px] h-[400px]">
-                <div class="flex-1">
-                    <img class="w-full h-full" src="./images/F.jpg" alt="">
-                </div>
-                <div class="grid grid-cols-2 flex-1 gap-[5px] h-full">
-                    <img class="w-full h-full" src="./images/G.jpg" alt="">
-                    <img class="w-full h-full" src="./images/G.jpg" alt="">
-                    <img class="w-full h-full" src="./images/G.jpg" alt="">
-                    <img class="w-full h-full" src="./images/G.jpg" alt="">
-                </div>
-                <div class="flex-1">
-                    <img class="w-full h-full" src="./images/H.jpg" alt="">
-                </div>
-            </div>
-
-        </section>
+        <div class="lg:flex lg:gap-[5px] lg:h-[400px]">
+          <div class="flex-1 mb-[5px] lg:mb-0">
+            <img class="w-full h-full" src="./images/F.jpg" alt="" />
+          </div>
+          <div class="lg:grid lg:grid-cols-2 lg:flex-1 lg:gap-[5px]">
+            <img class="w-full h-full mb-[5px]" src="./images/G.jpg" alt="" />
+            <img class="w-full h-full mb-[5px]" src="./images/G.jpg" alt="" />
+            <img class="w-full h-full mb-[5px]" src="./images/G.jpg" alt="" />
+            <img class="w-full h-full mb-[5px]" src="./images/G.jpg" alt="" />
+          </div>
+          <div class="flex-1">
+            <img class="w-full h-full" src="./images/H.jpg" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
